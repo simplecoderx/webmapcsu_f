@@ -116,7 +116,7 @@ if (!isset($_SESSION["user_id"])) {
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
+  <!-- ======= Map Section ======= -->
   <main id="main">
 
             <div id="map"> 

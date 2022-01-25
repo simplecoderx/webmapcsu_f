@@ -8,7 +8,7 @@ if (isset($_GET["token"])) {
     
     $showUserId = mysqli_fetch_assoc(mysqli_query($conn, "SELECT id FROM users WHERE token='{$_GET["token"]}'"));
     $_SESSION["user_id"] = $showUserId['id'];
-    header("Location: home.php");
+    header("Location: viewmap.php");
 } else {
     header("Location: index.php");
 }

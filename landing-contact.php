@@ -49,15 +49,15 @@ if(!isset($_SERVER['HTTP_REFERER'])){
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="home.html">WebMapCSU</a></h1>
+      <h1 class="logo me-auto"><a href="landing-home.php">WebMapCSU</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a  href="home.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a class="active" href="contact.html">Contact Us</a></li>
+          <li><a  href="landing-home.php">Home</a></li>
+          <li><a href="landing-about.php">About Us</a></li>
+          <li><a class="active" href="landing-contact.php">Contact Us</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

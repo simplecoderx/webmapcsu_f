@@ -944,7 +944,7 @@ marker13.on("click",function(evt){
 let template13 = `
     <div class = "popup">
         <h3>New Gent's Dormitory</h3>
-        <img src="images/Gent_s Dormitory.jpg"/>
+        <img src="images/newgents.jpg"/>
         </a>
     </div>        
 `
@@ -2215,15 +2215,29 @@ const polygon31 = L.polygon([
 /*
     Arcade
 
+*/
+const marker32 = L.marker([8.957270, 125.595440]).addTo(mymap);
 
-const marker32 = L.marker([8.957427, 125.595330]).addTo(mymap);
+marker32.on("click",function(evt){
+
+    var myIcon = L.icon({
+        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+        iconSize: [25,41],
+        iconAnchor: [12,41],
+        popupAnchor: [1, -34],
+        shadowSize: [41,41]
+
+    });
+    this.setIcon(myIcon);
+
+});
 
 //popmessage
 let template32 = `
     <div class = "popup">
         <h3>Arcade</h3>
-        <a href="https://facebook.com/">
-        <img src="Arcade.jpg"/>
+        <img src="images/noimage.png"/>
         </a>
     </div>        
 `
@@ -2233,7 +2247,7 @@ marker32.bindPopup(template32);
 
     Arcade
 
-
+*/
 
 
 let locationName32= `
@@ -2244,10 +2258,11 @@ let locationName32= `
 `
 
 const polygon32 = L.polygon([
-   [8.957639, 125.595096],
-   [8.957692, 125.595454],
-   [8.954721, 125.597554],
-   [8.955142, 125.597479],   
+    [8.957493, 125.595083],
+    [8.957594, 125.595697],
+    [8.957024, 125.595796],
+    [8.956900, 125.595193],
+    
 ],{
     radius: 20,
     color:'transparent',
@@ -2263,7 +2278,7 @@ const polygon32 = L.polygon([
 });
 
 //marker .bindTooltip('angelica',{permanent:true, className: "my-label", offset:[5,-6]});
-*/
+
 
 /*
     Oval
@@ -2891,8 +2906,8 @@ const polygon41 = L.polygon([
 
 //marker .bindTooltip('angelica',{permanent:true, className: "my-label", offset:[5,-6]});
 
-
 /*
+
 //Ochoa Statue
 
 const marker42 = L.marker([8.958262, 125.598020]).addTo(mymap);
@@ -3455,7 +3470,7 @@ const polygon50 = L.polygon([
     CED Canteen
 */
 
-const marker51 = L.marker([8.959590, 125.597208]).addTo(mymap);
+const marker51 = L.marker([8.959477, 125.597256]).addTo(mymap);
 
 marker51.on("click",function(evt){
 
@@ -3477,7 +3492,7 @@ marker51.on("click",function(evt){
 let template51 = `
     <div class = "popup">
         <h3>CED Canteen</h3>
-        <img src="images/noimage.png"/>
+        <img src="images/cedcanteen.jpg"/>
         </a>
     </div>
 `
@@ -3498,10 +3513,12 @@ let locationName51= `
 `
 
 const polygon51 = L.polygon([
-   [8.959610, 125.597125],
-   [8.959515, 125.597152],
-   [8.959544, 125.597291],
-   [8.959647, 125.597267],   
+    [8.959497, 125.597232],
+    [8.959521, 125.597323],
+    [8.959453, 125.597344],
+    [8.959424, 125.597196],
+    
+      
 ],{
     radius: 20,
     color:'transparent',
@@ -4476,7 +4493,795 @@ const polygon65 = L.polygon([
 
 //marker .bindTooltip('angelica',{permanent:true, className: "my-label", offset:[5,-6]});
 
+/*
+    ATM Machine
+*/
+
+
+const marker66 =  L.marker([8.959453, 125.596340]).addTo(mymap);
+
+
+marker66.on("click",function(evt){
+
+    var myIcon = L.icon({
+        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+        iconSize: [25,41],
+        iconAnchor: [12,41],
+        popupAnchor: [1, -34],
+        shadowSize: [41,41]
+
+    });
+    this.setIcon(myIcon);
+});
+
+//add popmessage
+let template66 = `
+    <div class="popup">
+         <h3> ATM Machine</h3>
+         <img src="images/atm.jpg"/>
+         </a>
+    </div>
+`
+
+marker66.bindPopup(template66);
+//marker .bindTooltip(<a href="https://www.facebook.com"></a>);
 
 
 
+
+let locationName66= `
+    <div class = "label">
+        <h4>ATM Machine</h4>
+    </div>
+
+`
+
+const polygon66 = L.polygon([
+    [8.959460, 125.596322],
+    [8.959464, 125.596349],
+    [8.959440, 125.596357],
+    [8.959436, 125.596327],
+],{
+    radius: 20,
+    color:'transparent',
+    fillColor:'transparent',
+    fillopacity: 0
+
+}).addTo(mymap).bindTooltip(locationName66,{
+    permanent:true,
+    color:"transparent",
+    className: "no-background",
+    direction: "center",
+    opacity:100
+});
+//marker .bindTooltip('angelica',{permanent:true, className: "my-label", offset:[5,-6]});
+
+
+/*
+    FARM MECHA CENTER (undercons)
+*/
+
+
+const marker68 =  L.marker([8.957435, 125.598330]).addTo(mymap);
+
+
+marker68.on("click",function(evt){
+
+    var myIcon = L.icon({
+        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+        iconSize: [25,41],
+        iconAnchor: [12,41],
+        popupAnchor: [1, -34],
+        shadowSize: [41,41]
+
+    });
+    this.setIcon(myIcon);
+});
+
+//add popmessage
+let template68 = `
+    <div class="popup">
+         <h3>Farm Mecha Center (undercons)</h3>
+         <img src="images/F3.jpg"/>
+         </a>
+    </div>
+`
+
+marker68.bindPopup(template68);
+//marker .bindTooltip(<a href="https://www.facebook.com"></a>);
+
+
+
+
+let locationName68= `
+    <div class = "label">
+        <h4>Farm Mecha Center (undercons)</h4>
+    </div>
+
+`
+
+const polygon68 = L.polygon([
+    [8.957621, 125.598046],
+    [8.957669, 125.598330],
+    [8.957597, 125.598384],
+    [8.957637, 125.598561],
+    [8.957224, 125.598660],
+    [8.957145, 125.598132],
+],{
+    radius: 20,
+    color:'transparent',
+    fillColor:'transparent',
+    fillopacity: 0
+
+}).addTo(mymap).bindTooltip(locationName68,{
+    permanent:true,
+    color:"transparent",
+    className: "no-background",
+    direction: "center",
+    opacity:100
+});
+//marker .bindTooltip('angelica',{permanent:true, className: "my-label", offset:[5,-6]});
+
+
+/*
+    Guard House / Green Gate
+*/
+
+
+const marker69 =  L.marker([8.957280, 125.598700]).addTo(mymap);
+
+
+marker69.on("click",function(evt){
+
+    var myIcon = L.icon({
+        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+        iconSize: [25,41],
+        iconAnchor: [12,41],
+        popupAnchor: [1, -34],
+        shadowSize: [41,41]
+
+    });
+    this.setIcon(myIcon);
+});
+
+//add popmessage
+let template69 = `
+    <div class="popup">
+         <h3>Guard House / Green Gate</h3>
+         <img src="images/noimage.png"/>
+         </a>
+    </div>
+`
+
+marker69.bindPopup(template69);
+//marker .bindTooltip(<a href="https://www.facebook.com"></a>);
+
+
+
+
+let locationName69= `
+    <div class = "label">
+        <h4>Guard House / Green Gate</h4>
+    </div>
+
+`
+
+const polygon69 = L.polygon([
+    [8.957289, 125.598652],
+    [8.957215, 125.598652],
+    [8.957234, 125.598746],
+    [8.957316, 125.598727],
+
+],{
+    radius: 20,
+    color:'transparent',
+    fillColor:'transparent',
+    fillopacity: 0
+
+}).addTo(mymap).bindTooltip(locationName69,{
+    permanent:true,
+    color:"transparent",
+    className: "no-background",
+    direction: "center",
+    opacity:100
+});
+//marker .bindTooltip('angelica',{permanent:true, className: "my-label", offset:[5,-6]});
+
+
+/*
+    Reservoir
+*/
+
+
+const marker70 =  L.marker([8.956465, 125.597647]).addTo(mymap);
+
+
+marker70.on("click",function(evt){
+
+    var myIcon = L.icon({
+        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+        iconSize: [25,41],
+        iconAnchor: [12,41],
+        popupAnchor: [1, -34],
+        shadowSize: [41,41]
+
+    });
+    this.setIcon(myIcon);
+});
+
+//add popmessage
+let template70 = `
+    <div class="popup">
+         <h3>Reservoir</h3>
+         <img src="images/reservior.jpg"/>
+         </a>
+    </div>
+`
+
+marker70.bindPopup(template70);
+//marker .bindTooltip(<a href="https://www.facebook.com"></a>);
+
+
+
+
+let locationName70= `
+    <div class = "label">
+        <h4>Reservoir</h4>
+    </div>
+
+`
+
+const polygon70 = L.polygon([
+    [8.956499, 125.597509],
+    [8.956367, 125.597544],
+    [8.956401, 125.597785],
+    [8.956528, 125.597755],
+
+],{
+    radius: 20,
+    color:'transparent',
+    fillColor:'transparent',
+    fillopacity: 0
+
+}).addTo(mymap).bindTooltip(locationName70,{
+    permanent:true,
+    color:"transparent",
+    className: "no-background",
+    direction: "center",
+    opacity:100
+});
+//marker .bindTooltip('angelica',{permanent:true, className: "my-label", offset:[5,-6]});
+
+
+/*
+    EMB Machine
+*/
+
+
+const marker71 =  L.marker([8.955890, 125.597101]).addTo(mymap);
+
+
+marker71.on("click",function(evt){
+
+    var myIcon = L.icon({
+        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+        iconSize: [25,41],
+        iconAnchor: [12,41],
+        popupAnchor: [1, -34],
+        shadowSize: [41,41]
+
+    });
+    this.setIcon(myIcon);
+});
+
+//add popmessage
+let template71 = `
+    <div class="popup">
+         <h3>EMB Machine</h3>
+         <img src="images/noimage.png"/>
+         </a>
+    </div>
+`
+
+marker71.bindPopup(template71);
+//marker .bindTooltip(<a href="https://www.facebook.com"></a>);
+
+
+
+
+let locationName71= `
+    <div class = "label">
+        <h4>EMB Machine</h4>
+    </div>
+
+`
+
+const polygon71 = L.polygon([
+    [8.955865, 125.597063],
+    [8.955865, 125.597063],
+    [8.955812, 125.597147],
+    [8.955919, 125.597124],
+
+],{
+    radius: 20,
+    color:'transparent',
+    fillColor:'transparent',
+    fillopacity: 0
+
+}).addTo(mymap).bindTooltip(locationName71,{
+    permanent:true,
+    color:"transparent",
+    className: "no-background",
+    direction: "center",
+    opacity:100
+});
+//marker .bindTooltip('angelica',{permanent:true, className: "my-label", offset:[5,-6]});
+
+
+/*
+    Power House
+*/
+
+
+const marker72 =  L.marker([8.955199, 125.598301]).addTo(mymap);
+
+
+marker72.on("click",function(evt){
+
+    var myIcon = L.icon({
+        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+        iconSize: [25,41],
+        iconAnchor: [12,41],
+        popupAnchor: [1, -34],
+        shadowSize: [41,41]
+
+    });
+    this.setIcon(myIcon);
+});
+
+//add popmessage
+let template72 = `
+    <div class="popup">
+         <h3>Power House</h3>
+         <img src="images/powerhousem.jpg"/>
+         </a>
+    </div>
+`
+
+marker72.bindPopup(template72);
+//marker .bindTooltip(<a href="https://www.facebook.com"></a>);
+
+
+
+
+let locationName72= `
+    <div class = "label">
+        <h4>Power House</h4>
+    </div>
+
+`
+
+const polygon72 = L.polygon([
+    [8.955227, 125.598250],
+    [8.955244, 125.598319],
+    [8.955134, 125.598344],
+    [8.955120, 125.598267],
+
+],{
+    radius: 20,
+    color:'transparent',
+    fillColor:'transparent',
+    fillopacity: 0
+
+}).addTo(mymap).bindTooltip(locationName72,{
+    permanent:true,
+    color:"transparent",
+    className: "no-background",
+    direction: "center",
+    opacity:100
+});
+//marker .bindTooltip('angelica',{permanent:true, className: "my-label", offset:[5,-6]});
+
+
+/*
+    Old CCard BLDG
+*/
+
+
+const marker73 =  L.marker([8.953959, 125.597640]).addTo(mymap);
+
+
+marker73.on("click",function(evt){
+
+    var myIcon = L.icon({
+        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+        iconSize: [25,41],
+        iconAnchor: [12,41],
+        popupAnchor: [1, -34],
+        shadowSize: [41,41]
+
+    });
+    this.setIcon(myIcon);
+});
+
+//add popmessage
+let template73 = `
+    <div class="popup">
+         <h3>Old CCard BLDG</h3>
+         <img src="images/oldccard.jpg"/>
+         </a>
+    </div>
+`
+
+marker73.bindPopup(template73);
+//marker .bindTooltip(<a href="https://www.facebook.com"></a>);
+
+
+
+
+let locationName73= `
+    <div class = "label">
+        <h4>Old CCard BLDG</h4>
+    </div>
+
+`
+
+const polygon73 = L.polygon([
+    [8.954006, 125.597570],
+    [8.953844, 125.597594],
+    [8.953858, 125.597720],
+    [8.954039, 125.597686],
+
+],{
+    radius: 20,
+    color:'transparent',
+    fillColor:'transparent',
+    fillopacity: 0
+
+}).addTo(mymap).bindTooltip(locationName73,{
+    permanent:true,
+    color:"transparent",
+    className: "no-background",
+    direction: "center",
+    opacity:100
+});
+//marker .bindTooltip('angelica',{permanent:true, className: "my-label", offset:[5,-6]});
+
+
+
+/*
+    Vermi House
+*/
+
+
+const marker74 =  L.marker([8.953439, 125.595850]).addTo(mymap);
+
+
+marker74.on("click",function(evt){
+
+    var myIcon = L.icon({
+        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+        iconSize: [25,41],
+        iconAnchor: [12,41],
+        popupAnchor: [1, -34],
+        shadowSize: [41,41]
+
+    });
+    this.setIcon(myIcon);
+});
+
+//add popmessage
+let template74 = `
+    <div class="popup">
+         <h3>Vermi House</h3>
+         <img src="images/vermi.jpg"/>
+         </a>
+    </div>
+`
+
+marker74.bindPopup(template74);
+//marker .bindTooltip(<a href="https://www.facebook.com"></a>);
+
+
+
+
+let locationName74= `
+    <div class = "label">
+        <h4>Vermi House</h4>
+    </div>
+
+`
+
+const polygon74 = L.polygon([
+    [8.953567, 125.595786],
+    [8.953270, 125.595824],
+    [8.953294, 125.595931],
+    [8.953597, 125.595866],
+
+],{
+    radius: 20,
+    color:'transparent',
+    fillColor:'transparent',
+    fillopacity: 0
+
+}).addTo(mymap).bindTooltip(locationName74,{
+    permanent:true,
+    color:"transparent",
+    className: "no-background",
+    direction: "center",
+    opacity:100
+});
+//marker .bindTooltip('angelica',{permanent:true, className: "my-label", offset:[5,-6]});
+
+
+/*
+    Nursery
+*/
+
+
+const marker75 =  L.marker([8.953296, 125.596040]).addTo(mymap);
+
+
+marker75.on("click",function(evt){
+
+    var myIcon = L.icon({
+        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+        iconSize: [25,41],
+        iconAnchor: [12,41],
+        popupAnchor: [1, -34],
+        shadowSize: [41,41]
+
+    });
+    this.setIcon(myIcon);
+});
+
+//add popmessage
+let template75 = `
+    <div class="popup">
+         <h3>Nursery</h3>
+         <img src="images/nursery.jpg"/>
+         </a>
+    </div>
+`
+
+marker75.bindPopup(template75);
+//marker .bindTooltip(<a href="https://www.facebook.com"></a>);
+
+
+
+
+let locationName75= `
+    <div class = "label">
+        <h4>Nursery</h4>
+    </div>
+
+`
+
+const polygon75 = L.polygon([
+    [8.953304, 125.595958],
+    [8.953225, 125.595969],
+    [8.953249, 125.596133],
+    [8.953336, 125.596105],
+
+],{
+    radius: 20,
+    color:'transparent',
+    fillColor:'transparent',
+    fillopacity: 0
+
+}).addTo(mymap).bindTooltip(locationName75,{
+    permanent:true,
+    color:"transparent",
+    className: "no-background",
+    direction: "center",
+    opacity:100
+});
+//marker .bindTooltip('angelica',{permanent:true, className: "my-label", offset:[5,-6]});
+
+
+/*
+    Villares Hostel
+*/
+
+
+const marker76 =  L.marker([8.958670, 125.598285]).addTo(mymap);
+
+
+marker76.on("click",function(evt){
+
+    var myIcon = L.icon({
+        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+        iconSize: [25,41],
+        iconAnchor: [12,41],
+        popupAnchor: [1, -34],
+        shadowSize: [41,41]
+
+    });
+    this.setIcon(myIcon);
+});
+
+//add popmessage
+let template76 = `
+    <div class="popup">
+         <h3>Villares Hostel</h3>
+         <img src="images/villares.jpg"/>
+         </a>
+    </div>
+`
+
+marker76.bindPopup(template76);
+//marker .bindTooltip(<a href="https://www.facebook.com"></a>);
+
+
+
+
+let locationName76= `
+    <div class = "label">
+        <h4>Villares Hostel</h4>
+    </div>
+
+`
+
+const polygon76 = L.polygon([
+    [8.958705, 125.597929],
+    [8.958618, 125.597953],
+    [8.958695, 125.598315],
+    [8.958433, 125.598374],
+    [8.958454, 125.598508],
+    [8.958812, 125.598406],
+
+],{
+    radius: 20,
+    color:'transparent',
+    fillColor:'transparent',
+    fillopacity: 0
+
+}).addTo(mymap).bindTooltip(locationName76,{
+    permanent:true,
+    color:"transparent",
+    className: "no-background",
+    direction: "center",
+    opacity:100
+});
+//marker .bindTooltip('angelica',{permanent:true, className: "my-label", offset:[5,-6]});
+
+
+/*
+    Mechanical Dyer
+*/
+
+
+const marker77 =  L.marker([8.952883, 125.597802]).addTo(mymap);
+
+
+marker77.on("click",function(evt){
+
+    var myIcon = L.icon({
+        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+        iconSize: [25,41],
+        iconAnchor: [12,41],
+        popupAnchor: [1, -34],
+        shadowSize: [41,41]
+
+    });
+    this.setIcon(myIcon);
+});
+
+//add popmessage
+let template77 = `
+    <div class="popup">
+         <h3>Mechanical Dyer</h3>
+         <img src="images/noimage.png"/>
+         </a>
+    </div>
+`
+
+marker77.bindPopup(template77);
+//marker .bindTooltip(<a href="https://www.facebook.com"></a>);
+
+
+
+
+let locationName77= `
+    <div class = "label">
+        <h4>Mechanial Dyer</h4>
+    </div>
+
+`
+
+const polygon77 = L.polygon([
+    [8.952886, 125.597743],
+    [8.952825, 125.597750],
+    [8.952832, 125.597830],
+    [8.952900, 125.597818],
+],{
+    radius: 20,
+    color:'transparent',
+    fillColor:'transparent',
+    fillopacity: 0
+
+}).addTo(mymap).bindTooltip(locationName77,{
+    permanent:true,
+    color:"transparent",
+    className: "no-background",
+    direction: "center",
+    opacity:100
+});
+//marker .bindTooltip('angelica',{permanent:true, className: "my-label", offset:[5,-6]});
+
+
+/*
+    Bodega
+*/
+
+
+const marker78 =  L.marker([8.952880, 125.597923]).addTo(mymap);
+
+
+marker78.on("click",function(evt){
+
+    var myIcon = L.icon({
+        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+        iconSize: [25,41],
+        iconAnchor: [12,41],
+        popupAnchor: [1, -34],
+        shadowSize: [41,41]
+
+    });
+    this.setIcon(myIcon);
+});
+
+//add popmessage
+let template78 = `
+    <div class="popup">
+         <h3>Bodega</h3>
+         <img src="images/noimage.png"/>
+         </a>
+    </div>
+`
+
+marker78.bindPopup(template78);
+//marker .bindTooltip(<a href="https://www.facebook.com"></a>);
+
+
+
+
+let locationName78= `
+    <div class = "label">
+        <h4>Bodega</h4>
+    </div>
+
+`
+
+const polygon78 = L.polygon([
+    [8.952899, 125.597860],
+    [8.952814, 125.597887],
+    [8.952829, 125.597985],
+    [8.952916, 125.597956],
+],{
+    radius: 20,
+    color:'transparent',
+    fillColor:'transparent',
+    fillopacity: 0
+
+}).addTo(mymap).bindTooltip(locationName78,{
+    permanent:true,
+    color:"transparent",
+    className: "no-background",
+    direction: "center",
+    opacity:100
+});
+//marker .bindTooltip('angelica',{permanent:true, className: "my-label", offset:[5,-6]});
 
