@@ -23,7 +23,7 @@ if (isset($_POST["signup"])) {
   if ($password !== $cpassword) {
     echo "<script>alert('Password did not match.');</script>";
   } elseif ($check_email > 0) {
-    echo "<script>alert('Email already exists in out database.');</script>";
+    echo "<script>alert('Email already exists in our database.');</script>";
   } else {
     $sql = "INSERT INTO users (full_name, email, password, token, status) VALUES ('$full_name', '$email', '$password', '$token', '0')";
     $result = mysqli_query($conn, $sql);
