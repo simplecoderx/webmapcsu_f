@@ -7,3 +7,4 @@ To run the project
 7. Open XAMPP (Apache and MySQL).
 8. Open localhost http://localhost/webmapcsu.
 9. Configure XAMPP php.ini and sendmail.ini file. You can follow this video for the configuration https://youtu.be/9W644cyDyNM
+10. Change email address in the config.php and register.php.
